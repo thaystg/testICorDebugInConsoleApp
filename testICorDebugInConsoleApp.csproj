@@ -9,6 +9,7 @@
     <SelfContained>true</SelfContained>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <UseInterpreter>true</UseInterpreter>
   </PropertyGroup>
 
 </Project>

@@ -6,7 +6,15 @@
         {
             "label": "buildAndRun",
             "type": "shell",
-            "command": "pwsh ./scripts/buildAndRun.ps1",
+            "windows": {
+                "command": "./scripts/buildAndRun.ps1",
+            },
+            "linux": {
+                "command": "pwsh ./scripts/buildAndRun.ps1",
+            },
+            "osx": {
+                "command": "pwsh ./scripts/buildAndRun.ps1",
+            },
             "isBackground": true
         }
     ],
