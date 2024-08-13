@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch and Debug Mono",
+            "name": "Using vsdbg",
             "type": "monovsdbg",
             "request": "launch",
-            "program": "${workspaceFolder}\\bin\\Debug\\testICorDebugInConsoleApp",
+            "program": "${workspaceFolder}\\bin\\Debug\\testICorDebugInConsoleApp.exe",
             "monoDebuggerOptions": {
                 "ip": "127.0.0.1",
                 "port": 1234,
@@ -16,6 +16,14 @@
                 "isServer": false,
                 "assetsPath": "${workspaceFolder}\\bin\\Debug\\"
             },
+            "preLaunchTask": "buildAndRun",
+        },
+        {
+            "name": "Using debugger-libs",
+            "request": "attach",
+            "type": "mono",
+            "address": "localhost",
+            "port": 1234,
             "preLaunchTask": "buildAndRun",
         }
     ]
